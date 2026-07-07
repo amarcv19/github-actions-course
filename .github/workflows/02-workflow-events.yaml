@@ -12,11 +12,6 @@ jobs:
 
       - name: Show github context 
         run: | 
-          echo ${{github.action }}
-          echo ${{ github.action_repository}}
-          echo ${{ github.actor}}
-          echo ${{ github.api_url }}
-          echo ${{ github.run_id }}
-          echo ${{ github.repositoryUrl }}
-          echo ${{ github.workflow_ref }}
+          echo ${{ github.repository }}
+          echo ${{ github.ref }}
 
