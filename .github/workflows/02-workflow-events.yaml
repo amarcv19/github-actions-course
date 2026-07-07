@@ -8,4 +8,15 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - name: Show the trigger
-        run: echo ${{ github.event }}
+        run: echo " I've been triggered by a(n) ${{ github.event_name }} event"
+
+      - name: Show github context 
+        run: | 
+          echo ${{github.action }}
+          echo ${{ github.action_repository}}
+          echo ${{ github.actor}}
+          echo ${{ github.api_url }}
+          echo ${{ github.run_id }}
+          echo ${{ github.repositoryUrl }}
+          echo ${{ github.workflow_ref }}
+
