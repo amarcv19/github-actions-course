@@ -15,5 +15,5 @@ jobs:
         run: | 
           echo ${{ github.repository }}
           echo ${{ github.ref }}
-          echo ${{ toJson(github.event )}}
+          echo ${{ toJSON(github.event )}}
 
